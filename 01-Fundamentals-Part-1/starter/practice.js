@@ -6,6 +6,9 @@
 let country = "United States of America";
 let continent = "North America";
 let population = "331,000,000";
+console.log(country)
+console.log(continent)
+console.log(population)
 
 //Question 2) Data Types
 // 1. Declare a variable called 'isIsland' and set its value according to your
@@ -15,12 +18,12 @@ let population = "331,000,000";
 // to the console
 
 let isIsland = "false";
-let language = "";
+let language;
 
-console.log(country)
-console.log(continent)
-console.log(population)
-console.log(isIsland)
+console.log(typeof isIsland);
+console.log(typeof population);
+console.log(typeof country);
+console.log(typeof language);
 
 //Question 3 Let, Const, Var
 // 1. Set the value of 'language' to the language spoken where you live (some
