@@ -28,7 +28,7 @@ year = 2021;
 console.log(typeof year); //number
 */
 
-
+/*
 //LET, VAR, AND CONST
 
 //mutating the variable 
@@ -40,3 +40,10 @@ age = 25;
 
 var job = 'programmer'
 job = 'gay'
+*/
+
+// OPPERATORS
+const ageHannah = 2021 - 1996;
+const ageTanner = 30;
+console.log(ageHannah, ageTanner)
+console.log(ageHannah * 2 / 5)

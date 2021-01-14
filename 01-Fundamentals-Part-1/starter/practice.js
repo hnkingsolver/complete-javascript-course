@@ -33,7 +33,8 @@ console.log(typeof language);
 // 3. Try to change one of the changed variables now, and observe what happens
 
 language = 'English';
-const country = 'US';
-const continent = 'North America';
-const isIsland = 'false';
+const country = 'US'; //already been declared error message
+const continent = 'North America'; //already been declared error message
+const isIsland = 'false'; // ^^ same as that, but to get rid of the error message all we need
+//to do is get ride of the const, or declare the const at the top where we first declared it.
 isIsland = true;
