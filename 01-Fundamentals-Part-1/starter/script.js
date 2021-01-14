@@ -1,3 +1,4 @@
+/*
 // first lecture
 
 // let js = 'amazing';
@@ -25,3 +26,17 @@ console.log(typeof year); //undefined
 //dynamic typing... adding a year
 year = 2021;
 console.log(typeof year); //number
+*/
+
+
+//LET, VAR, AND CONST
+
+//mutating the variable 
+let age = 24;
+age = 25;
+
+// const birthYear = 1996;
+// birthYear = 1990;
+
+var job = 'programmer'
+job = 'gay'
