@@ -31,3 +31,9 @@ console.log(typeof language);
 // 2. Think about which variables should be const variables (which values will never
 // change, and which might change?). Then, change these variables to const.
 // 3. Try to change one of the changed variables now, and observe what happens
+
+language = 'English';
+const country = 'US';
+const continent = 'North America';
+const isIsland = 'false';
+isIsland = true;
