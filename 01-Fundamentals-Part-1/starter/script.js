@@ -106,6 +106,39 @@ if (money) {
 } else {
     console.log('You should get a job!')
 }
+
+
+//SWITCH STATEMENTS
+
+const day = 'friddday'
+switch (day) {
+    case 'monday': // day === 'monday'
+        console.log('Lay in bed')
+        console.log('Heal from covid')
+        break;
+    case 'tuesday':
+        console.log('Help')
+        break;
+    case 'wednesday':
+        console.log('its humpday')
+        break;
+    case 'thursday':
+        console.log('thirsty thursday')
+        break
+    case 'friday':
+        console.log('Its friyayyyyy')
+        break;
+    default://basically am else block at tge end of a long if else statement
+        console.log("not a valid day")
+}
 */
 
-//EQUALITY OPERATORS
+// Ternary Operator
+
+//expression: something that produces a value
+//statement: 
+
+const age = 24;
+age >= 21 ? console.log('I like to drink wine 🍷') :
+    console.log('I like to drink water 💧');
+
