@@ -188,7 +188,7 @@ console.log(hannah)
 console.log(`${hannah.firstName} has 3 friends, ${hannah.friends[0]}, ${hannah.friends[1]}, and ${hannah.friends[2]}.`);
 
 console.log(hannah.friends.length)
-*/
+
 
 //OBJECT METHODS
 const hannah = {
@@ -232,3 +232,99 @@ console.log(hannah.age);
 console.log(hannah.getSummary());
 
 
+//FORLOOPS
+//forloop keeps running until condition is true
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights repetition ${rep} 🏋️‍♂️`)
+}
+
+//loop through array
+const hannah = [
+    'Hannah',
+    'Kingsolver',
+    2020 - 1996,
+    'Barista',
+    ['Kate', 'Tanner', 'Devin'],
+    true
+];
+const types = [];
+
+for (let i = 0; i < hannah.length; i++) {
+    console.log(hannah[i], typeof hannah[i]);
+
+    //Filling types array
+    //types[i]= typeof hannah[i]; one way to do it
+    types.push(typeof hannah[i]) //but this is cleaner
+}
+console.log(types)
+
+const years = [1996, 2000, 2007, 2015, 2020];
+const ages = [];
+for (let i = 0; i < years.length; i++) {
+    ages.push(2021 - years[i])
+}
+console.log(ages)
+
+//Continue and Break
+console.log('---ONLY STRINGS---')
+for (let i = 0; i < hannah.length; i++) {
+    if (typeof hannah[i] !== 'string') continue;
+
+    console.log(hannah[i], typeof hannah[i]);
+}
+
+console.log('---BREAK WITH NUMBER---')
+for (let i = 0; i < hannah.length; i++) {
+    if (typeof hannah[i] === 'number') break;
+
+    console.log(hannah[i], typeof hannah[i]);
+}
+
+
+const hannah = [
+    'Hannah',
+    'Kingsolver',
+    2020 - 1996,
+    'Barista',
+    ['Kate', 'Tanner', 'Devin'],
+    true
+];
+//backwards forloop... 4,3,2,1
+for (let i = hannah.length - 1; i >= 0; i--) {
+    console.log(i, hannah[i])
+}
+
+//nested forloop
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`-----Starting exercise ${exercise} -----`);
+
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`Exercise ${exercise}: Lifting weight repetition ${rep} 🏋️‍♂️`)
+    }
+}
+*/
+
+//THE WHILE LOOP
+
+//for comparison
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights repetition ${rep} 🏋️‍♂️`)
+}
+
+//the while loop version of ^^^^
+let rep = 1;
+while (rep <= 10) {
+    console.log(`WHILE: Lifting weights repetition ${rep} 🏋️‍♂️`)
+    rep++
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}`)
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) console.log('Loop is about to end...')
+}
+
+//we want to use a forloop when we need a counter like when we loop over an array, but whenever we dont need to do that, the while loop is the way to go.
