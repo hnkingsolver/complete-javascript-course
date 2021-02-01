@@ -4,7 +4,7 @@
 const calcAge = birthYear => 2037 - birthYear;
 
 console.log('hi');
-*/
+
 const temperatures1 = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
 const temperatures2 = [-1, 8, 6, 3, 0, 'error', 70];
 
@@ -35,3 +35,23 @@ const calcTempAmplitude = function (temps) {
 };
 const amplitude = calcTempAmplitude(temperatures);
 console.log(amplitude);
+*/
+
+const measureKelvin = function () {
+  const measurement = {
+    type: 'temp',
+    unit: 'celcius',
+
+    //C) FIX
+    value: Number(prompt('Degrees celcius:')),
+  };
+  //B)FIND
+  console.table(measurement);
+
+  // console.log(measurement.value);
+  // console.warn(measurement.value);
+  // console.error(measurement.value);
+  const kelvin = measurement.value + 273;
+  return kelvin;
+};
+console.log(measureKelvin());
